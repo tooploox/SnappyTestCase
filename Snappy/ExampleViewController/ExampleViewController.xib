@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExampleViewController" customModule="Snappy" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABT-C8-EQ4">
+                    <rect key="frame" x="240" y="627" width="125" height="30"/>
+                    <state key="normal" title="Tap me if you can!"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFe-rX-wzR">
+                    <rect key="frame" x="10" y="45.5" width="355" height="571.5"/>
+                    <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac consectetur metus, eu rutrum enim. Fusce facilisis dignissim lacus, non vehicula metus feugiat eu. Proin commodo risus at accumsan ultrices. Sed quis odio lobortis, bibendum nulla eget, rutrum arcu. Proin quis est vehicula, pharetra mi nec, gravida velit. Maecenas egestas dapibus ipsum, eget fringilla dolor pellentesque ut. Integer hendrerit libero id diam aliquet, id blandit erat fermentum. Ut dignissim augue sed elit imperdiet interdum.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About SnappyTestCase" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGb-ar-g2W">
+                    <rect key="frame" x="10" y="10" width="355" height="25.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ABT-C8-EQ4" secondAttribute="trailing" constant="10" id="3hg-tG-lWs"/>
+                <constraint firstItem="JGb-ar-g2W" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="9Sy-R0-yoh"/>
+                <constraint firstItem="nFe-rX-wzR" firstAttribute="top" secondItem="JGb-ar-g2W" secondAttribute="bottom" constant="10" id="Hws-kt-0NP"/>
+                <constraint firstItem="ABT-C8-EQ4" firstAttribute="top" secondItem="nFe-rX-wzR" secondAttribute="bottom" constant="10" id="Tkj-mM-ZVM"/>
+                <constraint firstAttribute="trailing" secondItem="nFe-rX-wzR" secondAttribute="trailing" constant="10" id="Wjf-ax-7fn"/>
+                <constraint firstItem="nFe-rX-wzR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="agb-Xg-D4E"/>
+                <constraint firstItem="JGb-ar-g2W" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="gD0-Jy-VwN"/>
+                <constraint firstAttribute="trailing" secondItem="JGb-ar-g2W" secondAttribute="trailing" constant="10" id="iR9-8e-1uL"/>
+                <constraint firstAttribute="bottom" secondItem="ABT-C8-EQ4" secondAttribute="bottom" constant="10" id="sBQ-NK-qcJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>
