@@ -11,6 +11,7 @@
 		645456F41ECB1FD900535586 /* DeviceRack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645456F31ECB1FD900535586 /* DeviceRack.swift */; };
 		645456F61ECB206D00535586 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645456F51ECB206D00535586 /* DeviceInfo.swift */; };
 		645456F81ECB22CB00535586 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645456F71ECB22CB00535586 /* Snap.swift */; };
+		645456FA1ECB266400535586 /* SnappyTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645456F91ECB266400535586 /* SnappyTestCase.swift */; };
 		64EBACA01ECB0ED400980969 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EBAC9F1ECB0ED400980969 /* AppDelegate.swift */; };
 		64EBACA21ECB0ED400980969 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EBACA11ECB0ED400980969 /* ViewController.swift */; };
 		64EBACA51ECB0ED400980969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64EBACA31ECB0ED400980969 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		645456F31ECB1FD900535586 /* DeviceRack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceRack.swift; path = Core/DeviceRack.swift; sourceTree = "<group>"; };
 		645456F51ECB206D00535586 /* DeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceInfo.swift; path = Core/DeviceInfo.swift; sourceTree = "<group>"; };
 		645456F71ECB22CB00535586 /* Snap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Snap.swift; path = Core/Snap.swift; sourceTree = "<group>"; };
+		645456F91ECB266400535586 /* SnappyTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnappyTestCase.swift; path = Core/SnappyTestCase.swift; sourceTree = "<group>"; };
 		64EBAC9C1ECB0ED400980969 /* Snappy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snappy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64EBAC9F1ECB0ED400980969 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64EBACA11ECB0ED400980969 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				645456F31ECB1FD900535586 /* DeviceRack.swift */,
 				645456F51ECB206D00535586 /* DeviceInfo.swift */,
 				645456F71ECB22CB00535586 /* Snap.swift */,
+				645456F91ECB266400535586 /* SnappyTestCase.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				645456FA1ECB266400535586 /* SnappyTestCase.swift in Sources */,
 				64EBACA21ECB0ED400980969 /* ViewController.swift in Sources */,
 				645456F81ECB22CB00535586 /* Snap.swift in Sources */,
 				64EBACA01ECB0ED400980969 /* AppDelegate.swift in Sources */,
