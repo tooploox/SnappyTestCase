@@ -8,7 +8,7 @@ import FBSnapshotTestCase
 
 class SnappyTestCase: FBSnapshotTestCase {
     
-    public func verifyViewSnaps(_ snaps: [Snap], view: UIView, container: UIView? = nil) {
+    public func verifyViewSnaps(_ snaps: [Snap], view: UIView, container: UIView? = nil, file: StaticString = #file, line: UInt = #line) {
         let frameView = container == nil ? view : container!
         var messages = [String]()
         for snap in snaps {
@@ -25,7 +25,7 @@ class SnappyTestCase: FBSnapshotTestCase {
             }
         }
         if !messages.isEmpty {
-            XCTFail(combinedPartialMessages(messages))
+            XCTFail(combinedPartialMessages(messages), file: file, line: line)
         }
     }
     
@@ -33,6 +33,7 @@ class SnappyTestCase: FBSnapshotTestCase {
         var combined = ""
         for msg in messages {
             combined.append(msg)
+            combined.append(";")
         }
         return combined
     }
