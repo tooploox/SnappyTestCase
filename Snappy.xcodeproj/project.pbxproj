@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		645456F11ECB134200535586 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 645456F01ECB134200535586 /* Podfile */; };
+		645456F41ECB1FD900535586 /* DeviceRack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645456F31ECB1FD900535586 /* DeviceRack.swift */; };
+		645456F61ECB206D00535586 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645456F51ECB206D00535586 /* DeviceInfo.swift */; };
+		645456F81ECB22CB00535586 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645456F71ECB22CB00535586 /* Snap.swift */; };
 		64EBACA01ECB0ED400980969 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EBAC9F1ECB0ED400980969 /* AppDelegate.swift */; };
 		64EBACA21ECB0ED400980969 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EBACA11ECB0ED400980969 /* ViewController.swift */; };
 		64EBACA51ECB0ED400980969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64EBACA31ECB0ED400980969 /* Main.storyboard */; };
@@ -33,6 +36,9 @@
 		085CECDF8BB7E516836173F5 /* Pods-SnappyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnappyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnappyTests/Pods-SnappyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		15662777A0CD635E1AFC4BF2 /* Pods-Snappy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snappy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snappy/Pods-Snappy.debug.xcconfig"; sourceTree = "<group>"; };
 		645456F01ECB134200535586 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		645456F31ECB1FD900535586 /* DeviceRack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceRack.swift; path = Core/DeviceRack.swift; sourceTree = "<group>"; };
+		645456F51ECB206D00535586 /* DeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceInfo.swift; path = Core/DeviceInfo.swift; sourceTree = "<group>"; };
+		645456F71ECB22CB00535586 /* Snap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Snap.swift; path = Core/Snap.swift; sourceTree = "<group>"; };
 		64EBAC9C1ECB0ED400980969 /* Snappy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snappy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64EBAC9F1ECB0ED400980969 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64EBACA11ECB0ED400980969 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +85,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		645456F21ECB1FB100535586 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				645456F31ECB1FD900535586 /* DeviceRack.swift */,
+				645456F51ECB206D00535586 /* DeviceInfo.swift */,
+				645456F71ECB22CB00535586 /* Snap.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
 		64EBAC931ECB0ED400980969 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +118,7 @@
 		64EBAC9E1ECB0ED400980969 /* Snappy */ = {
 			isa = PBXGroup;
 			children = (
+				645456F21ECB1FB100535586 /* Core */,
 				645456F01ECB134200535586 /* Podfile */,
 				64EBAC9F1ECB0ED400980969 /* AppDelegate.swift */,
 				64EBACA11ECB0ED400980969 /* ViewController.swift */,
@@ -337,7 +354,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				64EBACA21ECB0ED400980969 /* ViewController.swift in Sources */,
+				645456F81ECB22CB00535586 /* Snap.swift in Sources */,
 				64EBACA01ECB0ED400980969 /* AppDelegate.swift in Sources */,
+				645456F41ECB1FD900535586 /* DeviceRack.swift in Sources */,
+				645456F61ECB206D00535586 /* DeviceInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
