@@ -7,9 +7,9 @@ import UIKit
 @testable import Snappy
 
 class ExampleViewControllerTests: SnappyTestCase {
-    
-    let window = UIWindow()
 
+    let window = UIWindow()
+    
     override func setUp() {
         super.setUp()
         recordMode = false
