@@ -4,9 +4,10 @@
 //
 
 import UIKit
+import FBSnapshotTestCase
 @testable import Snappy
 
-class ExampleViewControllerTests: SnappyTestCase {
+class ExampleViewControllerTests: FBSnapshotTestCase {
 
     let window = UIWindow()
     

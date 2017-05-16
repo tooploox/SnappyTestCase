@@ -6,7 +6,7 @@
 import XCTest
 import FBSnapshotTestCase
 
-class SnappyTestCase: FBSnapshotTestCase {
+extension FBSnapshotTestCase {
     
     public func verifyViewSnaps(_ snaps: [Snap], view: UIView, container: UIView? = nil, file: StaticString = #file, line: UInt = #line) {
         let frameView = container == nil ? view : container!
