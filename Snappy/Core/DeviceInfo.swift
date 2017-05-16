@@ -7,8 +7,15 @@ import UIKit
 
 public struct DeviceInfo {
     
-    let screenSize: CGSize
-    let name: String
+    public let screenSize: CGSize
+    public let name: String
+    public let scale: CGFloat
+    
+    init(screenSize: CGSize, name: String, scale: CGFloat = UIScreen.main.scale) {
+        self.screenSize = screenSize
+        self.name = name
+        self.scale = scale
+    }
 }
 
 extension DeviceInfo: Snap {

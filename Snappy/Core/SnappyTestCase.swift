@@ -12,6 +12,7 @@ class SnappyTestCase: FBSnapshotTestCase {
         let frameView = container == nil ? view : container!
         var messages = [String]()
         for snap in snaps {
+            UIScreen.main.setValue(snap.scale, forKeyPath:"scale")
             frameView.frame.size = snap.frameSize
             frameView.setNeedsLayout()
             frameView.layoutIfNeeded()
@@ -21,7 +22,9 @@ class SnappyTestCase: FBSnapshotTestCase {
                 suffixes: FBSnapshotTestCaseDefaultSuffixes(),
                 tolerance: 0.0
             ) {
-                messages.append(msg)
+                if !messages.contains(msg) {
+                    messages.append(msg)
+                }
             }
         }
         if !messages.isEmpty {
