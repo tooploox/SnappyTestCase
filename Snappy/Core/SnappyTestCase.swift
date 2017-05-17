@@ -14,7 +14,7 @@ extension FBSnapshotTestCase {
         var snaps: [Snap]
         
         var description: String {
-            return message + " (" + snaps.map { $0.identifier }.joined(separator: ", ") + ")"
+            return "\(message) (\(snaps.map { $0.identifier }.joined(separator: ", ")))"
         }
     }
     
