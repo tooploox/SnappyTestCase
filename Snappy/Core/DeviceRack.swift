@@ -10,25 +10,25 @@ public struct DeviceRack {
     public struct iPhone {
         
         static let screen3_5 = DeviceInfo(
-            screenSize: CGSize(width: 320.0, height: 480.0),
+            portraitScreenSize: CGSize(width: 320.0, height: 480.0),
             name: "iPhone 3,5\"",
             scale: 2.0
         )
         
         static let screen4_0 = DeviceInfo(
-            screenSize: CGSize(width: 320.0, height: 568.0),
+            portraitScreenSize: CGSize(width: 320.0, height: 568.0),
             name: "iPhone 4\"",
             scale: 2.0
         )
         
         static let screen4_7 = DeviceInfo(
-            screenSize: CGSize(width: 375.0, height: 667.0),
+            portraitScreenSize: CGSize(width: 375.0, height: 667.0),
             name: "iPhone 4,7\"",
             scale: 2.0
         )
         
         static let screen5_5 = DeviceInfo(
-            screenSize: CGSize(width: 414.0, height: 736.0),
+            portraitScreenSize: CGSize(width: 414.0, height: 736.0),
             name: "iPhone 5,5\"",
             scale: 3.0
         )
