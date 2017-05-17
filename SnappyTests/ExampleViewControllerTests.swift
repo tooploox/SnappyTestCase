@@ -25,7 +25,7 @@ class ExampleViewControllerTests: FBSnapshotTestCase {
     func testAllWidths() {
         window.rootViewController = ExampleViewController(nibName: nil, bundle: nil)
         window.makeKeyAndVisible()
-        verifyViewSnaps(DeviceRack.iPhone.allWidths, view: window)
+        verifyViewSnaps(DeviceRack.iPhone.all.portrait.uniqueWidths, view: window)
     }
     
 }

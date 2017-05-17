@@ -32,6 +32,14 @@ public struct DeviceInfo {
         return withOrientation(.portrait)
     }
     
+    public var landscapeScreenSize: CGSize {
+        return CGSize(width: portraitScreenSize.height, height: portraitScreenSize.width)
+    }
+    
+    public var orientedScreenSize: CGSize {
+        return orientation == .portrait ? portraitScreenSize : landscapeScreenSize
+    }
+    
     private func withOrientation(_ newOrientation: Orientation) -> DeviceInfo {
         return DeviceInfo(
             portraitScreenSize: portraitScreenSize,
@@ -39,18 +47,6 @@ public struct DeviceInfo {
             scale: scale,
             orientation: newOrientation
         )
-    }
-}
-
-extension DeviceInfo: Snap {
-    
-    public var identifier: String {
-        return "\(name)_\(orientation.rawValue)"
-    }
-    
-    public var frameSize: CGSize {
-        return orientation == .portrait ? portraitScreenSize :
-            CGSize(width: portraitScreenSize.height, height: portraitScreenSize.width)
     }
 }
 
@@ -62,5 +58,39 @@ extension Sequence where Iterator.Element == DeviceInfo {
     
     public var portrait: [DeviceInfo] {
         return map { $0.portrait }
+    }
+    
+    public var uniqueWidths: [DeviceInfo] {
+        return unique{ (lhs, rhs) -> Bool in
+            lhs.orientedScreenSize.width == rhs.orientedScreenSize.width
+        }
+    }
+    
+    public var uniqueHeights: [DeviceInfo] {
+        return unique{ (lhs, rhs) -> Bool in
+            lhs.orientedScreenSize.height == rhs.orientedScreenSize.height
+        }
+    }
+    
+    func unique(_ equalityTest: (DeviceInfo, DeviceInfo) -> Bool) -> [DeviceInfo] {
+        var unique = [DeviceInfo]()
+        for info in self {
+            if !unique.contains(where: { equalityTest($0, info) }) {
+                unique.append(info)
+            }
+        }
+        return unique
+    }
+    
+}
+
+extension DeviceInfo: Snap {
+    
+    public var identifier: String {
+        return "\(name)_\(orientation.rawValue)"
+    }
+    
+    public var frameSize: CGSize {
+        return orientedScreenSize
     }
 }
