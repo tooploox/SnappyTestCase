@@ -8,37 +8,47 @@ import FBSnapshotTestCase
 
 extension FBSnapshotTestCase {
     
+    struct SnapVerifyError {
+        
+        let message: String
+        var snaps: [Snap]
+        
+        var description: String {
+            return message + " (" + snaps.map { $0.identifier }.joined(separator: ", ") + ")"
+        }
+    }
+    
     public func verifyViewSnaps(_ snaps: [Snap], view: UIView, container: UIView? = nil, file: StaticString = #file, line: UInt = #line) {
         let frameView = container == nil ? view : container!
-        var messages = [String]()
+        var errors = [SnapVerifyError]()
         for snap in snaps {
             UIScreen.main.setValue(snap.scale, forKeyPath:"scale")
             frameView.frame.size = snap.frameSize
             frameView.setNeedsLayout()
             frameView.layoutIfNeeded()
-            if let msg = snapshotVerifyViewOrLayer(
+            if var msg = snapshotVerifyViewOrLayer(
                 view,
                 identifier: snap.identifier,
                 suffixes: FBSnapshotTestCaseDefaultSuffixes(),
                 tolerance: 0.0
             ) {
-                if !messages.contains(msg) {
-                    messages.append(msg)
+                if recordMode {
+                    msg = "Test ran in record mode. Reference image is now saved. Disable record mode to perform an actual snapshot comparison!"
+                }
+                if let existingIndex = errors.index(where: { $0.message == msg }) {
+                    errors[existingIndex].snaps.append(snap)
+                } else {
+                    errors.append(SnapVerifyError(message: msg, snaps: [snap]))
                 }
             }
         }
-        if !messages.isEmpty {
-            XCTFail(combinedPartialMessages(messages), file: file, line: line)
+        if !errors.isEmpty {
+            XCTFail(combinedPartialMessages(errors), file: file, line: line)
         }
     }
     
-    func combinedPartialMessages(_ messages: [String]) -> String {
-        var combined = ""
-        for msg in messages {
-            combined.append(msg)
-            combined.append(";")
-        }
-        return combined
+    func combinedPartialMessages(_ errors: [SnapVerifyError]) -> String {
+        return errors.map { $0.description }.joined(separator: "; ")
     }
     
 }
