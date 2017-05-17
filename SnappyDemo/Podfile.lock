@@ -1,0 +1,23 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - Snappy (0.0.2):
+    - FBSnapshotTestCase (~> 2.1.4)
+
+DEPENDENCIES:
+  - Snappy (from `..`)
+
+EXTERNAL SOURCES:
+  Snappy:
+    :path: ..
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Snappy: 6c56b55cb17b515073fba30bf645e7e02eb43644
+
+PODFILE CHECKSUM: a350b1a63c007252e9840155a833c5e9e39391bf
+
+COCOAPODS: 1.2.0.beta.1

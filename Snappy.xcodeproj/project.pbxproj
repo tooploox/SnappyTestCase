@@ -12,14 +12,11 @@
 		645456F61ECB206D00535586 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645456F51ECB206D00535586 /* DeviceInfo.swift */; };
 		645456F81ECB22CB00535586 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645456F71ECB22CB00535586 /* Snap.swift */; };
 		645456FA1ECB266400535586 /* SnappyTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645456F91ECB266400535586 /* SnappyTestCase.swift */; };
-		645456FE1ECB2B0300535586 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645456FC1ECB2B0300535586 /* ExampleViewController.swift */; };
-		645456FF1ECB2B0300535586 /* ExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 645456FD1ECB2B0300535586 /* ExampleViewController.xib */; };
 		64EBACA01ECB0ED400980969 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EBAC9F1ECB0ED400980969 /* AppDelegate.swift */; };
 		64EBACA21ECB0ED400980969 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EBACA11ECB0ED400980969 /* ViewController.swift */; };
 		64EBACA51ECB0ED400980969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64EBACA31ECB0ED400980969 /* Main.storyboard */; };
 		64EBACA71ECB0ED400980969 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64EBACA61ECB0ED400980969 /* Assets.xcassets */; };
 		64EBACAA1ECB0ED400980969 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64EBACA81ECB0ED400980969 /* LaunchScreen.storyboard */; };
-		64EBACB51ECB0ED400980969 /* ExampleViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EBACB41ECB0ED400980969 /* ExampleViewControllerTests.swift */; };
 		6506DE981D91184CD5737E0A /* Pods_Snappy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907BEA73AFA055326E77C333 /* Pods_Snappy.framework */; };
 		E571BCC94C318F0510B1625C /* Pods_SnappyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8198A1607400D95207714F54 /* Pods_SnappyTests.framework */; };
 /* End PBXBuildFile section */
@@ -43,8 +40,6 @@
 		645456F51ECB206D00535586 /* DeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceInfo.swift; path = Core/DeviceInfo.swift; sourceTree = "<group>"; };
 		645456F71ECB22CB00535586 /* Snap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Snap.swift; path = Core/Snap.swift; sourceTree = "<group>"; };
 		645456F91ECB266400535586 /* SnappyTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnappyTestCase.swift; path = Core/SnappyTestCase.swift; sourceTree = "<group>"; };
-		645456FC1ECB2B0300535586 /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleViewController.swift; path = ExampleViewController/ExampleViewController.swift; sourceTree = "<group>"; };
-		645456FD1ECB2B0300535586 /* ExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ExampleViewController.xib; path = ExampleViewController/ExampleViewController.xib; sourceTree = "<group>"; };
 		64EBAC9C1ECB0ED400980969 /* Snappy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snappy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64EBAC9F1ECB0ED400980969 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64EBACA11ECB0ED400980969 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,7 +48,6 @@
 		64EBACA91ECB0ED400980969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64EBACAB1ECB0ED400980969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64EBACB01ECB0ED400980969 /* SnappyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnappyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		64EBACB41ECB0ED400980969 /* ExampleViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewControllerTests.swift; sourceTree = "<group>"; };
 		64EBACB61ECB0ED400980969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8198A1607400D95207714F54 /* Pods_SnappyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnappyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		907BEA73AFA055326E77C333 /* Pods_Snappy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snappy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,15 +96,6 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		645456FB1ECB2ACD00535586 /* ExampleViewControler */ = {
-			isa = PBXGroup;
-			children = (
-				645456FC1ECB2B0300535586 /* ExampleViewController.swift */,
-				645456FD1ECB2B0300535586 /* ExampleViewController.xib */,
-			);
-			name = ExampleViewControler;
-			sourceTree = "<group>";
-		};
 		64EBAC931ECB0ED400980969 = {
 			isa = PBXGroup;
 			children = (
@@ -134,7 +119,6 @@
 		64EBAC9E1ECB0ED400980969 /* Snappy */ = {
 			isa = PBXGroup;
 			children = (
-				645456FB1ECB2ACD00535586 /* ExampleViewControler */,
 				645456F21ECB1FB100535586 /* Core */,
 				645456F01ECB134200535586 /* Podfile */,
 				64EBAC9F1ECB0ED400980969 /* AppDelegate.swift */,
@@ -150,7 +134,6 @@
 		64EBACB31ECB0ED400980969 /* SnappyTests */ = {
 			isa = PBXGroup;
 			children = (
-				64EBACB41ECB0ED400980969 /* ExampleViewControllerTests.swift */,
 				64EBACB61ECB0ED400980969 /* Info.plist */,
 			);
 			path = SnappyTests;
@@ -260,7 +243,6 @@
 				64EBACA71ECB0ED400980969 /* Assets.xcassets in Resources */,
 				645456F11ECB134200535586 /* Podfile in Resources */,
 				64EBACA51ECB0ED400980969 /* Main.storyboard in Resources */,
-				645456FF1ECB2B0300535586 /* ExampleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +357,6 @@
 				64EBACA21ECB0ED400980969 /* ViewController.swift in Sources */,
 				645456F81ECB22CB00535586 /* Snap.swift in Sources */,
 				64EBACA01ECB0ED400980969 /* AppDelegate.swift in Sources */,
-				645456FE1ECB2B0300535586 /* ExampleViewController.swift in Sources */,
 				645456F41ECB1FD900535586 /* DeviceRack.swift in Sources */,
 				645456F61ECB206D00535586 /* DeviceInfo.swift in Sources */,
 			);
@@ -385,7 +366,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64EBACB51ECB0ED400980969 /* ExampleViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +501,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 89T2GE89HD;
 				INFOPLIST_FILE = Snappy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tooploox.Snappy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -535,6 +516,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 89T2GE89HD;
 				INFOPLIST_FILE = Snappy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tooploox.Snappy;
 				PRODUCT_NAME = "$(TARGET_NAME)";

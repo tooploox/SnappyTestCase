@@ -4,8 +4,9 @@
 //
 
 import UIKit
+import Snappy
 import FBSnapshotTestCase
-@testable import Snappy
+@testable import SnappyDemo
 
 class ExampleViewControllerTests: FBSnapshotTestCase {
 
