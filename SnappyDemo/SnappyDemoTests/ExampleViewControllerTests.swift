@@ -14,19 +14,36 @@ class ExampleViewControllerTests: FBSnapshotTestCase {
     
     override func setUp() {
         super.setUp()
-        window.rootViewController = ExampleViewController(nibName: nil, bundle: nil)
         window.makeKeyAndVisible()
         recordMode = false
     }
     
     func testAllDevices() {
+        window.rootViewController = ExampleViewController(nibName: nil, bundle: nil)
         verifyViewSnaps(DeviceRack.iPhone.all, view: window)
     }
     
     func testAllWidths() {
+        window.rootViewController = ExampleViewController(nibName: nil, bundle: nil)
         verifyViewSnaps(
             DeviceRack.iPhone.all.landscape.uniqueWidths + DeviceRack.iPhone.all.portrait.uniqueWidths,
             view: window
         )
+    }
+    
+    func testInNavigationStack() {
+        let navigationController = UINavigationController(
+            rootViewController: ExampleViewController(nibName: nil, bundle: nil)
+        )
+        navigationController.navigationBar.isTranslucent = false
+        navigationController.navigationBar.barTintColor = .groupTableViewBackground
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [navigationController]
+        tabBarController.tabBar.isTranslucent = false
+        tabBarController.tabBar.barTintColor = .groupTableViewBackground
+        
+        window.rootViewController = tabBarController
+        verifyViewSnaps(DeviceRack.iPhone.all, view: window)
     }
 }
