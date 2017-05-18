@@ -14,19 +14,19 @@ class ExampleViewControllerTests: FBSnapshotTestCase {
     
     override func setUp() {
         super.setUp()
-        recordMode = true
+        window.rootViewController = ExampleViewController(nibName: nil, bundle: nil)
+        window.makeKeyAndVisible()
+        recordMode = false
     }
     
     func testAllDevices() {
-        window.rootViewController = ExampleViewController(nibName: nil, bundle: nil)
-        window.makeKeyAndVisible()
         verifyViewSnaps(DeviceRack.iPhone.all, view: window)
     }
     
     func testAllWidths() {
-        window.rootViewController = ExampleViewController(nibName: nil, bundle: nil)
-        window.makeKeyAndVisible()
-        verifyViewSnaps(DeviceRack.iPhone.all.portrait.uniqueWidths, view: window)
+        verifyViewSnaps(
+            DeviceRack.iPhone.all.landscape.uniqueWidths + DeviceRack.iPhone.all.portrait.uniqueWidths,
+            view: window
+        )
     }
-    
 }
