@@ -37,5 +37,4 @@ class ExampleTableViewCellTests: FBSnapshotTestCase {
     func testAllWidths() {
         verifyViewSnaps(DeviceRack.iPhone.all.portrait.uniqueWidths, view: cell, container: container)
     }
-    
 }
