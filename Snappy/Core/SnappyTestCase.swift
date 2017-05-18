@@ -23,6 +23,8 @@ extension FBSnapshotTestCase {
         var errors = [SnapVerifyError]()
         for snap in snaps {
             UIScreen.main.setValue(snap.scale, forKeyPath:"scale")
+            UIDevice.current.setValue(snap.deviceOrientation.rawValue, forKeyPath:"orientation")
+            
             frameView.frame.size = snap.frameSize
             frameView.setNeedsLayout()
             frameView.layoutIfNeeded()
