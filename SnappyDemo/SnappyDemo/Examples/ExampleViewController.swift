@@ -24,7 +24,6 @@ final class ExampleViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Tatra Mountains"
-        tabBarItem.title = "Tatra"
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: String(describing: UITableViewCell.self))
     }
     

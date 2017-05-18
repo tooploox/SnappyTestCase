@@ -105,8 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				64B3C08F1ECC937C00E4D96D /* ExampleViewControllerTests.swift */,
-				64B3C0811ECC916200E4D96D /* Info.plist */,
 				64B3C09F1ECDC04B00E4D96D /* ExampleTableViewCellTests.swift */,
+				64B3C0811ECC916200E4D96D /* Info.plist */,
 			);
 			path = SnappyDemoTests;
 			sourceTree = "<group>";
