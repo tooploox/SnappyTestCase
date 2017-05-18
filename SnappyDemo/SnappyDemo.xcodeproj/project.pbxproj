@@ -10,9 +10,12 @@
 		27EEE73B0A400388D04CF015 /* Pods_SnappyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9C3F3DA4AE6BF8F14D73F6 /* Pods_SnappyDemo.framework */; };
 		64B3C06B1ECC916200E4D96D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B3C06A1ECC916200E4D96D /* AppDelegate.swift */; };
 		64B3C0721ECC916200E4D96D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B3C0711ECC916200E4D96D /* Assets.xcassets */; };
-		64B3C08D1ECC930000E4D96D /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B3C08B1ECC930000E4D96D /* ExampleViewController.swift */; };
-		64B3C08E1ECC930000E4D96D /* ExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64B3C08C1ECC930000E4D96D /* ExampleViewController.xib */; };
 		64B3C0901ECC937C00E4D96D /* ExampleViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B3C08F1ECC937C00E4D96D /* ExampleViewControllerTests.swift */; };
+		64B3C09B1ECDB8A100E4D96D /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B3C0971ECDB8A100E4D96D /* ExampleTableViewCell.swift */; };
+		64B3C09C1ECDB8A100E4D96D /* ExampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64B3C0981ECDB8A100E4D96D /* ExampleTableViewCell.xib */; };
+		64B3C09D1ECDB8A100E4D96D /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B3C0991ECDB8A100E4D96D /* ExampleViewController.swift */; };
+		64B3C09E1ECDB8A100E4D96D /* ExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64B3C09A1ECDB8A100E4D96D /* ExampleViewController.xib */; };
+		64B3C0A01ECDC04B00E4D96D /* ExampleTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B3C09F1ECDC04B00E4D96D /* ExampleTableViewCellTests.swift */; };
 		78B819E7139166C7ADC689F8 /* Pods_SnappyDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64AE01B47B04C3542ABB3AC /* Pods_SnappyDemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,9 +40,12 @@
 		64B3C0761ECC916200E4D96D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64B3C07B1ECC916200E4D96D /* SnappyDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnappyDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B3C0811ECC916200E4D96D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		64B3C08B1ECC930000E4D96D /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
-		64B3C08C1ECC930000E4D96D /* ExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleViewController.xib; sourceTree = "<group>"; };
 		64B3C08F1ECC937C00E4D96D /* ExampleViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewControllerTests.swift; sourceTree = "<group>"; };
+		64B3C0971ECDB8A100E4D96D /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
+		64B3C0981ECDB8A100E4D96D /* ExampleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleTableViewCell.xib; sourceTree = "<group>"; };
+		64B3C0991ECDB8A100E4D96D /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		64B3C09A1ECDB8A100E4D96D /* ExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleViewController.xib; sourceTree = "<group>"; };
+		64B3C09F1ECDC04B00E4D96D /* ExampleTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCellTests.swift; sourceTree = "<group>"; };
 		D64AE01B47B04C3542ABB3AC /* Pods_SnappyDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnappyDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6102F159594D147DFB176FC /* Pods-SnappyDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnappyDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnappyDemoTests/Pods-SnappyDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,7 +93,7 @@
 		64B3C0691ECC916200E4D96D /* SnappyDemo */ = {
 			isa = PBXGroup;
 			children = (
-				64B3C08A1ECC930000E4D96D /* ViewControllers */,
+				64B3C0961ECDB8A100E4D96D /* Examples */,
 				64B3C06A1ECC916200E4D96D /* AppDelegate.swift */,
 				64B3C0711ECC916200E4D96D /* Assets.xcassets */,
 				64B3C0761ECC916200E4D96D /* Info.plist */,
@@ -100,17 +106,20 @@
 			children = (
 				64B3C08F1ECC937C00E4D96D /* ExampleViewControllerTests.swift */,
 				64B3C0811ECC916200E4D96D /* Info.plist */,
+				64B3C09F1ECDC04B00E4D96D /* ExampleTableViewCellTests.swift */,
 			);
 			path = SnappyDemoTests;
 			sourceTree = "<group>";
 		};
-		64B3C08A1ECC930000E4D96D /* ViewControllers */ = {
+		64B3C0961ECDB8A100E4D96D /* Examples */ = {
 			isa = PBXGroup;
 			children = (
-				64B3C08B1ECC930000E4D96D /* ExampleViewController.swift */,
-				64B3C08C1ECC930000E4D96D /* ExampleViewController.xib */,
+				64B3C0971ECDB8A100E4D96D /* ExampleTableViewCell.swift */,
+				64B3C0981ECDB8A100E4D96D /* ExampleTableViewCell.xib */,
+				64B3C0991ECDB8A100E4D96D /* ExampleViewController.swift */,
+				64B3C09A1ECDB8A100E4D96D /* ExampleViewController.xib */,
 			);
-			path = ViewControllers;
+			path = Examples;
 			sourceTree = "<group>";
 		};
 		BF88A579B376A2C327A613B4 /* Frameworks */ = {
@@ -225,8 +234,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64B3C09C1ECDB8A100E4D96D /* ExampleTableViewCell.xib in Resources */,
+				64B3C09E1ECDB8A100E4D96D /* ExampleViewController.xib in Resources */,
 				64B3C0721ECC916200E4D96D /* Assets.xcassets in Resources */,
-				64B3C08E1ECC930000E4D96D /* ExampleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,8 +347,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64B3C09B1ECDB8A100E4D96D /* ExampleTableViewCell.swift in Sources */,
 				64B3C06B1ECC916200E4D96D /* AppDelegate.swift in Sources */,
-				64B3C08D1ECC930000E4D96D /* ExampleViewController.swift in Sources */,
+				64B3C09D1ECDB8A100E4D96D /* ExampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64B3C0A01ECDC04B00E4D96D /* ExampleTableViewCellTests.swift in Sources */,
 				64B3C0901ECC937C00E4D96D /* ExampleViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
