@@ -10,20 +10,22 @@ import FBSnapshotTestCase
 
 class ExampleViewControllerTests: FBSnapshotTestCase {
 
-    let window = UIWindow()
     
     override func setUp() {
         super.setUp()
-        window.makeKeyAndVisible()
         recordMode = false
     }
     
     func testAllDevices() {
+        let window = UIWindow()
+        window.makeKeyAndVisible()
         window.rootViewController = ExampleViewController(nibName: nil, bundle: nil)
         verifyViewSnaps(DeviceRack.iPhone.all, view: window)
     }
     
     func testAllWidths() {
+        let window = UIWindow()
+        window.makeKeyAndVisible()
         window.rootViewController = ExampleViewController(nibName: nil, bundle: nil)
         verifyViewSnaps(
             DeviceRack.iPhone.all.landscape.uniqueWidths + DeviceRack.iPhone.all.portrait.uniqueWidths,
@@ -32,6 +34,9 @@ class ExampleViewControllerTests: FBSnapshotTestCase {
     }
     
     func testInNavigationStack() {
+        let window = UIWindow()
+        window.makeKeyAndVisible()
+        
         let navigationController = UINavigationController(
             rootViewController: ExampleViewController(nibName: nil, bundle: nil)
         )

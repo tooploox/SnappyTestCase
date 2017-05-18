@@ -93,4 +93,13 @@ extension DeviceInfo: Snap {
     public var frameSize: CGSize {
         return orientedScreenSize
     }
+    
+    public var deviceOrientation: UIDeviceOrientation {
+        switch orientation {
+        case .portrait:
+            return .portrait
+        case .landscape:
+            return .landscapeLeft
+        }
+    }
 }
