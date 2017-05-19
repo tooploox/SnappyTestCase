@@ -20,6 +20,7 @@ func testAllDevices() {
     let window = UIWindow()
     window.makeKeyAndVisible()
     window.rootViewController = ExampleViewController(nibName: nil, bundle: nil)
+    
     verifyViewSnaps(DeviceRack.iPhone.all, view: window)
 }
 ```
