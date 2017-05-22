@@ -17,13 +17,6 @@ public struct DeviceInfo {
     public let scale: CGFloat
     public let orientation: Orientation
     
-    init(portraitScreenSize: CGSize, name: String, scale: CGFloat = UIScreen.main.scale, orientation: Orientation = .portrait) {
-        self.portraitScreenSize = portraitScreenSize
-        self.name = name
-        self.scale = scale
-        self.orientation = orientation
-    }
-    
     public var landscape: DeviceInfo {
         return withOrientation(.landscape)
     }
@@ -38,6 +31,13 @@ public struct DeviceInfo {
     
     public var orientedScreenSize: CGSize {
         return orientation == .portrait ? portraitScreenSize : landscapeScreenSize
+    }
+    
+    public init(portraitScreenSize: CGSize, name: String, scale: CGFloat = UIScreen.main.scale, orientation: Orientation = .portrait) {
+        self.portraitScreenSize = portraitScreenSize
+        self.name = name
+        self.scale = scale
+        self.orientation = orientation
     }
     
     private func withOrientation(_ newOrientation: Orientation) -> DeviceInfo {
@@ -61,13 +61,13 @@ extension Sequence where Iterator.Element == DeviceInfo {
     }
     
     public var uniqueWidths: [DeviceInfo] {
-        return unique{ (lhs, rhs) -> Bool in
+        return unique { (lhs, rhs) -> Bool in
             lhs.orientedScreenSize.width == rhs.orientedScreenSize.width
         }
     }
     
     public var uniqueHeights: [DeviceInfo] {
-        return unique{ (lhs, rhs) -> Bool in
+        return unique { (lhs, rhs) -> Bool in
             lhs.orientedScreenSize.height == rhs.orientedScreenSize.height
         }
     }
@@ -81,7 +81,6 @@ extension Sequence where Iterator.Element == DeviceInfo {
         }
         return unique
     }
-    
 }
 
 extension DeviceInfo: Snap {
@@ -96,10 +95,10 @@ extension DeviceInfo: Snap {
     
     public var deviceOrientation: UIDeviceOrientation {
         switch orientation {
-        case .portrait:
-            return .portrait
-        case .landscape:
-            return .landscapeLeft
+            case .portrait:
+                return .portrait
+            case .landscape:
+                return .landscapeLeft
         }
     }
 }
