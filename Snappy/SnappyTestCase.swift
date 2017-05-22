@@ -25,7 +25,6 @@ extension FBSnapshotTestCase {
             UIDevice.current.setValue(snap.deviceOrientation.rawValue, forKeyPath:"orientation")
             
             frameView.frame.size = snap.frameSize
-            frameView.setNeedsLayout()
             frameView.layoutIfNeeded()
             
             beforeSnapshot?(view, snap)

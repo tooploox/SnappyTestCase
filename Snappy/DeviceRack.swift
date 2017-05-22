@@ -7,7 +7,11 @@ import UIKit
 
 public struct DeviceRack {
     
+    private init() {}
+    
     public struct iPhone {
+        
+        private init() {}
         
         public static let screen3_5 = DeviceInfo(
             portraitScreenSize: CGSize(width: 320.0, height: 480.0),
@@ -42,6 +46,8 @@ public struct DeviceRack {
     }
     
     public struct iPad {
+        
+        private init() {}
         
         public static let nonRetina = DeviceInfo(
             portraitScreenSize: CGSize(width: 768.0, height: 1024.0),
