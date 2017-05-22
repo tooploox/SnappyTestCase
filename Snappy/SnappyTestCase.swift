@@ -3,7 +3,6 @@
 //  Copyright © 2017 Tooploox. All rights reserved.
 //
 
-import XCTest
 import FBSnapshotTestCase
 
 extension FBSnapshotTestCase {
