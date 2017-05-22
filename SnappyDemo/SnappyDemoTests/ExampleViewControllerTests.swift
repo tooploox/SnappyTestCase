@@ -10,7 +10,6 @@ import FBSnapshotTestCase
 
 class ExampleViewControllerTests: FBSnapshotTestCase {
 
-    
     override func setUp() {
         super.setUp()
         recordMode = false
