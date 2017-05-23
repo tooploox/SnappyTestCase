@@ -1,0 +1,11 @@
+platform :ios, '8.0'
+
+target 'SnappyDemo' do
+  use_frameworks!
+
+  target 'SnappyDemoTests' do
+    inherit! :search_paths
+    pod 'Snappy', :path => '..'
+  end
+
+end
