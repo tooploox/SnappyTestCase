@@ -4,7 +4,7 @@
 //
 
 import UIKit
-import Snappy
+import SnappyTestCase
 import FBSnapshotTestCase
 @testable import SnappyDemo
 

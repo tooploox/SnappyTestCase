@@ -16,6 +16,7 @@
 		64B3C09D1ECDB8A100E4D96D /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B3C0991ECDB8A100E4D96D /* ExampleViewController.swift */; };
 		64B3C09E1ECDB8A100E4D96D /* ExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64B3C09A1ECDB8A100E4D96D /* ExampleViewController.xib */; };
 		64B3C0A01ECDC04B00E4D96D /* ExampleTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B3C09F1ECDC04B00E4D96D /* ExampleTableViewCellTests.swift */; };
+		64CC11BE1ED46F4D0007A143 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 64CC11BD1ED46F4D0007A143 /* Podfile */; };
 		78B819E7139166C7ADC689F8 /* Pods_SnappyDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64AE01B47B04C3542ABB3AC /* Pods_SnappyDemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		64B3C0991ECDB8A100E4D96D /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		64B3C09A1ECDB8A100E4D96D /* ExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleViewController.xib; sourceTree = "<group>"; };
 		64B3C09F1ECDC04B00E4D96D /* ExampleTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCellTests.swift; sourceTree = "<group>"; };
+		64CC11BD1ED46F4D0007A143 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		D64AE01B47B04C3542ABB3AC /* Pods_SnappyDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnappyDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6102F159594D147DFB176FC /* Pods-SnappyDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnappyDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnappyDemoTests/Pods-SnappyDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +136,7 @@
 		C6B8E283C45A2E056957D9C7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				64CC11BD1ED46F4D0007A143 /* Podfile */,
 				24FAA63568F32FF6F0A6860A /* Pods-SnappyDemo.debug.xcconfig */,
 				48EFC52545D57E427461E857 /* Pods-SnappyDemo.release.xcconfig */,
 				E6102F159594D147DFB176FC /* Pods-SnappyDemoTests.debug.xcconfig */,
@@ -236,6 +239,7 @@
 			files = (
 				64B3C09C1ECDB8A100E4D96D /* ExampleTableViewCell.xib in Resources */,
 				64B3C09E1ECDB8A100E4D96D /* ExampleViewController.xib in Resources */,
+				64CC11BE1ED46F4D0007A143 /* Podfile in Resources */,
 				64B3C0721ECC916200E4D96D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
