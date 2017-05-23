@@ -5,7 +5,7 @@ target 'SnappyDemo' do
 
   target 'SnappyDemoTests' do
     inherit! :search_paths
-    pod 'Snappy', :path => '..'
+    pod 'SnappyTestCase', :path => '..'
   end
 
 end

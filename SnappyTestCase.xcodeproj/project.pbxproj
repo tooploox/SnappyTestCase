@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64B3C0B51ED2DA1900E4D96D /* Snappy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B3C0AB1ED2DA1900E4D96D /* Snappy.framework */; };
+		64B3C0B51ED2DA1900E4D96D /* SnappyTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B3C0AB1ED2DA1900E4D96D /* SnappyTestCase.framework */; };
 		64B3C0BC1ED2DA1900E4D96D /* Snappy.h in Headers */ = {isa = PBXBuildFile; fileRef = 64B3C0AE1ED2DA1900E4D96D /* Snappy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64B3C0C91ED2DDAF00E4D96D /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B3C0C51ED2DDAF00E4D96D /* DeviceInfo.swift */; };
 		64B3C0CA1ED2DDAF00E4D96D /* DeviceRack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B3C0C61ED2DDAF00E4D96D /* DeviceRack.swift */; };
 		64B3C0CB1ED2DDAF00E4D96D /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B3C0C71ED2DDAF00E4D96D /* Snap.swift */; };
 		64B3C0CC1ED2DDAF00E4D96D /* SnappyTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B3C0C81ED2DDAF00E4D96D /* SnappyTestCase.swift */; };
-		64B3C0D11ED2E1B800E4D96D /* Snappy.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 64B3C0D01ED2E1B800E4D96D /* Snappy.podspec */; };
+		64B3C0D11ED2E1B800E4D96D /* SnappyTestCase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 64B3C0D01ED2E1B800E4D96D /* SnappyTestCase.podspec */; };
 		64B3C0D31ED2F47900E4D96D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 64B3C0D21ED2F47900E4D96D /* Podfile */; };
 		AD9103449237FD11ECDCEA24 /* Pods_SnappyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE819BFE5A72D094418B54D4 /* Pods_SnappyTests.framework */; };
 		D6EAA21C4ACF517C1C7DA24A /* Pods_Snappy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29525483BA22AC2D37227905 /* Pods_Snappy.framework */; };
@@ -33,17 +33,17 @@
 		29525483BA22AC2D37227905 /* Pods_Snappy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snappy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB48503705BB24041D12E08 /* Pods-Snappy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snappy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snappy/Pods-Snappy.release.xcconfig"; sourceTree = "<group>"; };
 		4BB1F0DA68F46A4ECB71580F /* Pods-SnappyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnappyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnappyTests/Pods-SnappyTests.release.xcconfig"; sourceTree = "<group>"; };
-		64B3C0AB1ED2DA1900E4D96D /* Snappy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Snappy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64B3C0AB1ED2DA1900E4D96D /* SnappyTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnappyTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B3C0AE1ED2DA1900E4D96D /* Snappy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Snappy.h; sourceTree = "<group>"; };
 		64B3C0AF1ED2DA1900E4D96D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		64B3C0B41ED2DA1900E4D96D /* SnappyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnappyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64B3C0B41ED2DA1900E4D96D /* SnappyTestCaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnappyTestCaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B3C0BB1ED2DA1900E4D96D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64B3C0C51ED2DDAF00E4D96D /* DeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		64B3C0C61ED2DDAF00E4D96D /* DeviceRack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceRack.swift; sourceTree = "<group>"; };
 		64B3C0C71ED2DDAF00E4D96D /* Snap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
 		64B3C0C81ED2DDAF00E4D96D /* SnappyTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnappyTestCase.swift; sourceTree = "<group>"; };
 		64B3C0CE1ED2E0DC00E4D96D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		64B3C0D01ED2E1B800E4D96D /* Snappy.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Snappy.podspec; sourceTree = SOURCE_ROOT; };
+		64B3C0D01ED2E1B800E4D96D /* SnappyTestCase.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SnappyTestCase.podspec; sourceTree = SOURCE_ROOT; };
 		64B3C0D21ED2F47900E4D96D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		80F33CFA8730794E8F9DCC11 /* Pods-Snappy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snappy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snappy/Pods-Snappy.debug.xcconfig"; sourceTree = "<group>"; };
 		DE819BFE5A72D094418B54D4 /* Pods_SnappyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnappyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64B3C0B51ED2DA1900E4D96D /* Snappy.framework in Frameworks */,
+				64B3C0B51ED2DA1900E4D96D /* SnappyTestCase.framework in Frameworks */,
 				AD9103449237FD11ECDCEA24 /* Pods_SnappyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,8 +85,8 @@
 		64B3C0AC1ED2DA1900E4D96D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				64B3C0AB1ED2DA1900E4D96D /* Snappy.framework */,
-				64B3C0B41ED2DA1900E4D96D /* SnappyTests.xctest */,
+				64B3C0AB1ED2DA1900E4D96D /* SnappyTestCase.framework */,
+				64B3C0B41ED2DA1900E4D96D /* SnappyTestCaseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,7 +101,7 @@
 				64B3C0AE1ED2DA1900E4D96D /* Snappy.h */,
 				64B3C0AF1ED2DA1900E4D96D /* Info.plist */,
 				64B3C0D21ED2F47900E4D96D /* Podfile */,
-				64B3C0D01ED2E1B800E4D96D /* Snappy.podspec */,
+				64B3C0D01ED2E1B800E4D96D /* SnappyTestCase.podspec */,
 			);
 			path = Snappy;
 			sourceTree = "<group>";
@@ -149,9 +149,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		64B3C0AA1ED2DA1900E4D96D /* Snappy */ = {
+		64B3C0AA1ED2DA1900E4D96D /* SnappyTestCase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 64B3C0BF1ED2DA1900E4D96D /* Build configuration list for PBXNativeTarget "Snappy" */;
+			buildConfigurationList = 64B3C0BF1ED2DA1900E4D96D /* Build configuration list for PBXNativeTarget "SnappyTestCase" */;
 			buildPhases = (
 				000317F915C87D1DAE5E0120 /* [CP] Check Pods Manifest.lock */,
 				64B3C0A61ED2DA1900E4D96D /* Sources */,
@@ -164,14 +164,14 @@
 			);
 			dependencies = (
 			);
-			name = Snappy;
+			name = SnappyTestCase;
 			productName = Snappy;
-			productReference = 64B3C0AB1ED2DA1900E4D96D /* Snappy.framework */;
+			productReference = 64B3C0AB1ED2DA1900E4D96D /* SnappyTestCase.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		64B3C0B31ED2DA1900E4D96D /* SnappyTests */ = {
+		64B3C0B31ED2DA1900E4D96D /* SnappyTestCaseTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 64B3C0C21ED2DA1900E4D96D /* Build configuration list for PBXNativeTarget "SnappyTests" */;
+			buildConfigurationList = 64B3C0C21ED2DA1900E4D96D /* Build configuration list for PBXNativeTarget "SnappyTestCaseTests" */;
 			buildPhases = (
 				F0E9E00883C66C14F243B2A1 /* [CP] Check Pods Manifest.lock */,
 				64B3C0B01ED2DA1900E4D96D /* Sources */,
@@ -185,9 +185,9 @@
 			dependencies = (
 				64B3C0B71ED2DA1900E4D96D /* PBXTargetDependency */,
 			);
-			name = SnappyTests;
+			name = SnappyTestCaseTests;
 			productName = SnappyTests;
-			productReference = 64B3C0B41ED2DA1900E4D96D /* SnappyTests.xctest */;
+			productReference = 64B3C0B41ED2DA1900E4D96D /* SnappyTestCaseTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 64B3C0A51ED2DA1900E4D96D /* Build configuration list for PBXProject "Snappy" */;
+			buildConfigurationList = 64B3C0A51ED2DA1900E4D96D /* Build configuration list for PBXProject "SnappyTestCase" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -225,8 +225,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				64B3C0AA1ED2DA1900E4D96D /* Snappy */,
-				64B3C0B31ED2DA1900E4D96D /* SnappyTests */,
+				64B3C0AA1ED2DA1900E4D96D /* SnappyTestCase */,
+				64B3C0B31ED2DA1900E4D96D /* SnappyTestCaseTests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,7 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64B3C0D31ED2F47900E4D96D /* Podfile in Resources */,
-				64B3C0D11ED2E1B800E4D96D /* Snappy.podspec in Resources */,
+				64B3C0D11ED2E1B800E4D96D /* SnappyTestCase.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +352,7 @@
 /* Begin PBXTargetDependency section */
 		64B3C0B71ED2DA1900E4D96D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 64B3C0AA1ED2DA1900E4D96D /* Snappy */;
+			target = 64B3C0AA1ED2DA1900E4D96D /* SnappyTestCase */;
 			targetProxy = 64B3C0B61ED2DA1900E4D96D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -474,7 +474,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tooploox.Snappy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tooploox.SnappyTestCase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -497,7 +497,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tooploox.Snappy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tooploox.SnappyTestCase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -535,7 +535,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		64B3C0A51ED2DA1900E4D96D /* Build configuration list for PBXProject "Snappy" */ = {
+		64B3C0A51ED2DA1900E4D96D /* Build configuration list for PBXProject "SnappyTestCase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				64B3C0BD1ED2DA1900E4D96D /* Debug */,
@@ -544,7 +544,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64B3C0BF1ED2DA1900E4D96D /* Build configuration list for PBXNativeTarget "Snappy" */ = {
+		64B3C0BF1ED2DA1900E4D96D /* Build configuration list for PBXNativeTarget "SnappyTestCase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				64B3C0C01ED2DA1900E4D96D /* Debug */,
@@ -553,7 +553,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64B3C0C21ED2DA1900E4D96D /* Build configuration list for PBXNativeTarget "SnappyTests" */ = {
+		64B3C0C21ED2DA1900E4D96D /* Build configuration list for PBXNativeTarget "SnappyTestCaseTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				64B3C0C31ED2DA1900E4D96D /* Debug */,

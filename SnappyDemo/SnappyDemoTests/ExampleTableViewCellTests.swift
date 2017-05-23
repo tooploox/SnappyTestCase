@@ -4,7 +4,7 @@
 //
 
 import XCTest
-import Snappy
+import SnappyTestCase
 import FBSnapshotTestCase
 @testable import SnappyDemo
 

@@ -1,4 +1,4 @@
-Snappy
+SnappyTestCase
 ======
 
 iOS Simulator type agnostic snapshot testing, built on top of the [FBSnapshotTestCase](https://github.com/facebook/ios-snapshot-test-case).
@@ -6,7 +6,7 @@ iOS Simulator type agnostic snapshot testing, built on top of the [FBSnapshotTes
 Why?
 ----
 
-Snapshot testing helps to deliver views that scale correctly with a wide range of screen sizes. When it comes to view controllers, we usually want to ensure they keep visual quality on a various set of existing devices, in each supported orientation. Test suite could be run on numerous variants of iOS Simulators. However, this could be a really time-consuming task, for sure not acceptable during a development process. Snappy tackles this issue by combining test with a set of device definitions (each one including screen size, scale, and orientation) to validate with, ignoring real device simulator context information.
+Snapshot testing helps to deliver views that scale correctly with a wide range of screen sizes. When it comes to view controllers, we usually want to ensure they keep visual quality on a various set of existing devices, in each supported orientation. Test suite could be run on numerous variants of iOS Simulators. However, this could be a really time-consuming task, for sure not acceptable during a development process. SnappyTestCase tackles this issue by combining test with a set of device definitions (each one including screen size, scale, and orientation) to validate with, ignoring real device simulator context information.
 
 Quick Start
 -----------
@@ -50,15 +50,15 @@ Installation using CocoaPods
 
 Add following line to your test target pods list in `Podfile`:
 
-`pod 'Snappy'`
+`pod 'SnappyTestCase'`
 
 Authors
 -------
 
-`Snappy` was written at [Tooploox](www.tooploox.com) by
+`SnappyTestCase` was written at [Tooploox](www.tooploox.com) by
 [Przemysław Stasiak](https://github.com/pstasiak)
 
 License
 -------
 
-`Snappy` is Apache 2.0 licensed.
+`SnappyTestCase` is Apache 2.0 licensed.
