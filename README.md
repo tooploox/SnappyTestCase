@@ -24,9 +24,7 @@ Getting Started
 
 Validating view controller on all existing iPhones, with portrait orientation (default):
 
-```
-#!swift
-
+```swift
 func testAllDevices() {
     let window = UIWindow()
     window.makeKeyAndVisible()
