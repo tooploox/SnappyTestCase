@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
                             :tag => s.version.to_s }
     s.source_files      = 'Snappy/*.{swift}'
     s.frameworks        = 'XCTest', 'UIKit','Foundation'
-    s.dependency "FBSnapshotTestCase", "~> 2.1.4"
+    s.dependency "iOSSnapshotTestCase", "~> 2.2.0"
 end

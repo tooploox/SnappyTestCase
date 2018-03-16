@@ -33,7 +33,8 @@ extension FBSnapshotTestCase {
                 view,
                 identifier: snap.identifier,
                 suffixes: FBSnapshotTestCaseDefaultSuffixes(),
-                tolerance: tolerance
+                tolerance: tolerance,
+                defaultReferenceDirectory: ""
             ) {
                 if recordMode {
                     msg = "Test ran in record mode. Reference image is now saved. Disable record mode to perform an actual snapshot comparison!"
