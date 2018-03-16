@@ -13,8 +13,6 @@
 		64B3C0CA1ED2DDAF00E4D96D /* DeviceRack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B3C0C61ED2DDAF00E4D96D /* DeviceRack.swift */; };
 		64B3C0CB1ED2DDAF00E4D96D /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B3C0C71ED2DDAF00E4D96D /* Snap.swift */; };
 		64B3C0CC1ED2DDAF00E4D96D /* SnappyTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B3C0C81ED2DDAF00E4D96D /* SnappyTestCase.swift */; };
-		64B3C0D11ED2E1B800E4D96D /* SnappyTestCase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 64B3C0D01ED2E1B800E4D96D /* SnappyTestCase.podspec */; };
-		64B3C0D31ED2F47900E4D96D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 64B3C0D21ED2F47900E4D96D /* Podfile */; };
 		AD9103449237FD11ECDCEA24 /* Pods_SnappyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE819BFE5A72D094418B54D4 /* Pods_SnappyTests.framework */; };
 		D6EAA21C4ACF517C1C7DA24A /* Pods_Snappy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29525483BA22AC2D37227905 /* Pods_Snappy.framework */; };
 /* End PBXBuildFile section */
@@ -33,6 +31,7 @@
 		29525483BA22AC2D37227905 /* Pods_Snappy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snappy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB48503705BB24041D12E08 /* Pods-Snappy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snappy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snappy/Pods-Snappy.release.xcconfig"; sourceTree = "<group>"; };
 		4BB1F0DA68F46A4ECB71580F /* Pods-SnappyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnappyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnappyTests/Pods-SnappyTests.release.xcconfig"; sourceTree = "<group>"; };
+		643E4900205BE3FB00BD0299 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		64B3C0AB1ED2DA1900E4D96D /* SnappyTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnappyTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B3C0AE1ED2DA1900E4D96D /* Snappy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Snappy.h; sourceTree = "<group>"; };
 		64B3C0AF1ED2DA1900E4D96D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,6 +101,7 @@
 				64B3C0AF1ED2DA1900E4D96D /* Info.plist */,
 				64B3C0D21ED2F47900E4D96D /* Podfile */,
 				64B3C0D01ED2E1B800E4D96D /* SnappyTestCase.podspec */,
+				643E4900205BE3FB00BD0299 /* Cartfile */,
 			);
 			path = Snappy;
 			sourceTree = "<group>";
@@ -236,8 +236,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64B3C0D31ED2F47900E4D96D /* Podfile in Resources */,
-				64B3C0D11ED2E1B800E4D96D /* SnappyTestCase.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
